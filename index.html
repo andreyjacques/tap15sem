@@ -1,9 +1,33 @@
 <html>
  <head>
-  <title>teste</title>
-  <style>h2{ color:red;font-size:22px;} </style>
+ <title>teste</title>
+ <style>
+ body{
+	position:relative;
+	overflow:hidden;
+ }
+ .img{
+	background-image:url(https://d13yacurqjgara.cloudfront.net/users/373338/screenshots/2047522/bb8_dribbble.gif);
+	background-size:cover;
+	width:250px;
+	height:250px;
+	border-radius:100%;
+	display:block;
+	margin: auto;
+	transition: all 0.7s ease-in-out;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+ }
+ .img:hover{
+	transform:rotateZ(360deg);
+	border-radius: 10%;
+ }
+ </style>
  <head>
 <body>
-  <h2>teste</h2>
+  <div class="img"></div>
 </body>
 </html>
